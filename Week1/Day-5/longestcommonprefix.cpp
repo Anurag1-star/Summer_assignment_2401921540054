@@ -12,7 +12,7 @@ string longestCommonPrefix(vector<string>& strs) {
             str += strs[0][j];
         }
         return str;
-    }
+}
 int main(){
     vector<string>v = {"flower","flow","flight"};
     string ans = longestCommonPrefix(v);

@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-class Solution {
-public:
+
 bool isPalindrome(string s) {
     string str1 = "";
     
@@ -15,7 +14,10 @@ bool isPalindrome(string s) {
     reverse(str2.begin(), str2.end());
     return str1 == str2;
 }
-};
+
+
 int main(){
-    string str = 
+    string str = "A man, a plan, a canal: Panama";
+    bool check = isPalindrome(str);
+    cout<<check<<endl;
 }
