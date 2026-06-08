@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool canConstruct(string ransomNote, string magazine) {
+    unordered_map<char,int>mp;
+    for(int i=0;i<magazine.size();i++){
+        mp[magazine[i]]++;
+    }
+    for(int i=0;i<ransomNote.size();i++){
+        if(mp.find(ransomNote[i])!=mp.end()){
+            mp[ransomNote[i]]--;
+            if(mp[ransomNote[i]]==0) mp.erase(ransomNote[i]);
+        }
+        else{
+            return false;
+        }
+    }
+    return true;
+}
+int main(){
+    string ransomNote = "a";
+    string magazine = "b";
+    cout<<canConstruct(ransomNote,magazine)<<endl;
+    return 0;
+}
