@@ -20,5 +20,6 @@ bool repeatedSubstringPattern(string s) {
     return false;
 }
 int main(){
-    string str = 
+    string str = "abab";
+    cout<<repeatedSubstringPattern(str);
 }
