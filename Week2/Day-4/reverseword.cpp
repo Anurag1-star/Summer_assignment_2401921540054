@@ -13,5 +13,6 @@ string reverseWords(string s) {
 }
 
 int main(){
-    string str = 
+    string str = "Let's take LeetCode contest";
+    cout<<reverseWords(str)<<endl;
 }
